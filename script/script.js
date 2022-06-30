@@ -153,39 +153,43 @@
     function view() {
         const view = document.querySelector('.view')
         const viewText = document.querySelector('.view__content-text')
+        const viewTitle = document.querySelector('.view__content-title')
         const viewHeader = document.querySelector('.header')
         const viewMain = document.querySelector('.main')
         const viewFooter = document.querySelector('.footer')
         const body = document.querySelector('body')
+        // setTimeout(() => {
+        //     view.style.cssText = `
+        // height:0vh;
+        // opacity:0;
+        // `
+        //     viewHeader.style.cssText = `
+        // opacity:1;
+        // `
+        //     viewMain.style.cssText = `
+        // opacity:1;
+        // `
+        //     viewFooter.style.cssText = `
+        // opacity:1;
+        // `
+
+
+        // }, 9000);
         setTimeout(() => {
-            view.style.cssText = `
-        height:0vh;
-        opacity:0;
-        `
-            viewHeader.style.cssText = `
-        opacity:1;
-        `
-            viewMain.style.cssText = `
-        opacity:1;
-        `
-            viewFooter.style.cssText = `
-        opacity:1;
-        `
-
-
-        }, 9000);
+            viewTitle.classList.add('active')
+        }, 3000);
 
         setTimeout(() => {
             viewText.style.cssText = `
-        display:block;
+                display:block;
         `
-        }, 3000);
-        setTimeout(() => {
-            view.style.cssText = `
-        display:none;
-        `
-            body.classList.remove('active')
-        }, 11000);
+        }, 5000);
+        // setTimeout(() => {
+        //     view.style.cssText = `
+        // display:none;
+        // `
+        //     body.classList.remove('active')
+        // }, 11000);
     }
     view()
 

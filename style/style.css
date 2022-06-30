@@ -54,28 +54,23 @@ body.active {
     background: rgba(56, 62, 69, 0.44);
     position: fixed;
     width: 100vw;
-    display: flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    animation: viewAnimation 1s linear 1;
+    animation: viewAnimation 2s linear 1;
     transition: 1s;
+    overflow: hidden;
+
 }
 
-@keyframes viewAnimation {
-    0% {
-        height: 0;
-        opacity: 0;
-    }
-
-    50% {
-        opacity: 0.5;
-    }
-
-    100% {
-        height: 100vh;
-        opacity: 1;
-    }
+.view__content {
+    background: var(--orange);
+    animation: viewText 2s linear 1;
+    border-radius: 32px;
+    height: 100%;
+    margin: 0px 100px 100px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .header,
@@ -86,19 +81,20 @@ body.active {
 }
 
 .view__content-title {
-    font-size: 70px;
-    line-height: 70px;
+    font-size: 55px;
+    line-height: 60px;
     color: var(--black);
     font-family: var(--psbo);
-    white-space: nowrap;
+    opacity: 0;
+    transition: 2s;
+    margin-bottom: 80px;
+    text-align: center;
 }
 
-.view__content {
-    background: var(--orange);
-    animation: viewText 2s linear 1;
-    padding: 130px;
-    border-radius: 32px;
+.view__content-title.active {
+    opacity: 1;
 }
+
 
 .view__content-text {
     color: var(--white);
@@ -106,11 +102,10 @@ body.active {
     font-size: 35px;
     line-height: 40px;
     text-align: center;
-    margin-top: 50px;
     white-space: nowrap;
     overflow: hidden;
     display: none;
-    animation: print-text 4s steps(32), shadow-text 1;
+    animation: print-text 4s steps(29);
 }
 
 @keyframes print-text {
@@ -119,21 +114,30 @@ body.active {
     }
 
     to {
-        width: 32ch;
+        width: 29ch;
     }
 }
 
-@keyframes viewText {
-    0% {
-        padding: 0px;
+@keyframes shadow-text {
+    from {
+        opacity: 0;
+        ;
     }
 
-    50% {
-        padding: 100px;
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes viewAnimation {
+    0% {
+        height: 0;
+        opacity: 0;
     }
 
     100% {
-        padding: 130px;
+        height: 100vh;
+        opacity: 1;
     }
 }
 
@@ -948,7 +952,8 @@ body.active {
     opacity: 0;
     transition: 2s;
 }
-.footer__content-items{
+
+.footer__content-items {
     display: flex;
     justify-content: space-around;
     width: 100%;

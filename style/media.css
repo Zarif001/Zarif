@@ -14,6 +14,15 @@
 
 @media(max-width:1110px) {
 
+    /* View  */
+    .view__content-title {
+        font-size: 45px;
+    }
+
+    .view__content-text {
+        font-size: 33px;
+    }
+
     /* Main Time */
 
     .main__time-content {
@@ -65,22 +74,6 @@
 }
 
 @media(max-width:900px) {
-
-    /* View */
-    .view__content {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .view__content-title {
-        font-size: 46px;
-        line-height: 60px;
-    }
-
-    .view__content-text {
-        font-size: 32px;
-    }
 
     /* Header Box */
 
@@ -229,14 +222,12 @@
     }
 
     /* View  */
-
     .view__content-title {
         font-size: 38px;
-        line-height: 50px;
     }
 
     .view__content-text {
-        font-size: 25px;
+        font-size: 30px;
     }
 }
 
@@ -280,9 +271,46 @@
     .main__works-content {
         flex-wrap: wrap;
     }
+
+    /* View  */
+    .view__content{
+        margin: 0 50px 50px 50px ;
+    }
+
+    .view__content-title {
+        font-size: 34px;
+    }
+
+    .view__content-text {
+        font-size: 25px;
+    }
 }
 
 @media(max-width:550px) {
+
+    /* Header nav */
+
+
+
+    .header__nav-logo img {
+        width: 80px;
+    }
+
+    .header__content-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__nav-burgerMenu {
+        grid-column: span 3;
+        margin-top: 15px;
+    }
+
+    .header__nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
 
     /* Hire me Btn */
 
@@ -401,21 +429,8 @@
         justify-content: space-between;
     }
 
-    /* View  */
+    
 
-    .view__content-title {
-        font-size: 27px;
-        line-height: 29px;
-    }
-
-    .view__content-text {
-        font-size: 23px;
-        margin-top: 25px;
-    }
-
- 
-
-  
 }
 
 @media(max-width:450px) {
@@ -431,31 +446,6 @@
         margin-top: -45px;
         width: 260px;
     }
-
-
-    /* Header Nav  */
-
-
-    .header__nav-logo img {
-        width: 80px;
-    }
-
-    .header__content-nav {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .header__nav-burgerMenu {
-        grid-column: span 3;
-        margin-top: 15px;
-    }
-
-    .header__nav-list {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
 
 
     /* Burger */
@@ -646,20 +636,27 @@
         max-width: 185px;
     }
 
-    /* View  */
-
-    .view__content-text {
-        font-size: 18px;
-        margin-top: 14px;
-    }
 
     /* Message */
 
-    .message__content{
+    .message__content {
         padding: 18px;
     }
-    .message__content-title{
+
+    .message__content-title {
         font-size: 28px;
         line-height: 26px;
+    }
+
+    /* View  */
+    .view__content{
+        margin: 0;
+    }
+    .view__content-title {
+        font-size: 33px;
+    }
+
+    .view__content-text {
+        font-size: 25px;
     }
 }
