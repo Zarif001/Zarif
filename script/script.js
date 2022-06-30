@@ -187,7 +187,7 @@
             body.classList.remove('active')
         }, 11000);
     }
-    // view()
+    view()
 
 
 
