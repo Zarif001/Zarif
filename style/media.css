@@ -189,7 +189,7 @@
 
     .main__time-content {
         grid-template-columns: 1fr;
-        padding: 10px;
+        padding: 22px;
     }
 
     .main__time-caption {
@@ -273,8 +273,8 @@
     }
 
     /* View  */
-    .view__content{
-        margin: 0 50px 50px 50px ;
+    .view__content {
+        margin: 0 50px 50px 50px;
     }
 
     .view__content-title {
@@ -289,8 +289,6 @@
 @media(max-width:550px) {
 
     /* Header nav */
-
-
 
     .header__nav-logo img {
         width: 80px;
@@ -394,10 +392,6 @@
         font-size: 13px;
     }
 
-    .main_game-board {
-        width: 400px;
-        height: 400px;
-    }
 
     /* Main Time  */
 
@@ -429,26 +423,8 @@
         justify-content: space-between;
     }
 
-    
-
-}
-
-@media(max-width:450px) {
-
-    /* Header Box */
-
-    .header__box-text {
-        font-size: 20px;
-        line-height: 24px;
-    }
-
-    .header__box-img {
-        margin-top: -45px;
-        width: 260px;
-    }
-
-
     /* Burger */
+
 
     .burger-line {
         top: 110px;
@@ -476,6 +452,23 @@
 
     .hire__me-btn {
         grid-column-end: 4;
+    }
+
+
+}
+
+@media(max-width:450px) {
+
+    /* Header Box */
+
+    .header__box-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__box-img {
+        margin-top: -45px;
+        width: 260px;
     }
 
     /* Main Content */
@@ -566,7 +559,7 @@
     }
 
     .main__game-title {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 24px;
     }
 
@@ -649,9 +642,10 @@
     }
 
     /* View  */
-    .view__content{
+    .view__content {
         margin: 0;
     }
+
     .view__content-title {
         font-size: 35px;
     }

@@ -215,6 +215,8 @@ body.active {
     font-family: var(--psbo);
     color: var(--white);
     margin-right: 25px;
+    position: relative;
+    z-index: 99;
 }
 
 .header__nav-link::after {
@@ -895,6 +897,7 @@ body.active {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     align-items: center;
+    padding: 15px;
 }
 
 .main__time-clock {
