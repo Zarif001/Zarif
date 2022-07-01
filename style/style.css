@@ -361,7 +361,7 @@ body.active {
 .main__items-left {
     transform: translateX(-100%);
     transition: 2s;
-    background: url('../images/about-bg.png')no-repeat center center/contain;
+    background: url('../images/about-bg.webp')no-repeat center center/contain;
     position: relative;
 }
 
@@ -716,7 +716,7 @@ body.active {
 
 .main__game-title {
     color: var(--black);
-    font-family: var(-0pbo);
+    font-family: var(--pbo);
     font-size: 30px;
     line-height: 33px;
     text-align: center;
