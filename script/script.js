@@ -108,7 +108,7 @@ function createRandomCircle() {
 
     let { width, height } = board.getBoundingClientRect()
 
-    let size = randomNumber(10, 60)
+    let size = randomNumber(10, 50)
 
 
     let x = randomNumber(0, width - size)
@@ -157,6 +157,7 @@ const viewHeader = document.querySelector('.header')
 const viewMain = document.querySelector('.main')
 const viewFooter = document.querySelector('.footer')
 const body = document.querySelector('body')
+const message = document.querySelector('.message')
 
 function view() {
     setTimeout(() => {
@@ -191,6 +192,10 @@ function view() {
         `
         body.classList.remove('active')
     }, 11000);
+
+    setTimeout(() => {
+        message.style.display = 'flex'
+    }, 16000);
 }
 view()
 
@@ -255,7 +260,3 @@ function messageHire() {
     })
 }
 messageHire()
-
-
-
-// Dropdown
