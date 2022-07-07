@@ -157,7 +157,6 @@ const viewHeader = document.querySelector('.header')
 const viewMain = document.querySelector('.main')
 const viewFooter = document.querySelector('.footer')
 const body = document.querySelector('body')
-const message = document.querySelector('.message')
 
 function view() {
     setTimeout(() => {
@@ -193,9 +192,6 @@ function view() {
         body.classList.remove('active')
     }, 11000);
 
-    setTimeout(() => {
-        message.style.display = 'flex'
-    }, 16000);
 }
 view()
 
