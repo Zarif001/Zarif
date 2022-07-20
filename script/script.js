@@ -47,7 +47,8 @@ const startBtn = document.querySelector('.main__game-start'),
     timeEl = document.querySelector('#time'),
     board = document.querySelector('.main__game-board'),
     timeClose = document.querySelector('.main__game-close'),
-    timeDes = document.querySelector('.main__game-describtion')
+    timeDes = document.querySelector('.main__game-describtion'),
+    gameScroll = document.querySelector('#gameScroll')
 
 let time = 0,
     score = 0;
@@ -56,9 +57,9 @@ startBtn.addEventListener('click', (e) => {
     e.preventDefault();
     timeContent.style.height = `100vh`
     timeContent.style.transition = `1s`
-
-
+    gameScroll.scrollIntoView()
 })
+
 
 
 timeList.addEventListener('click', (e) => {
