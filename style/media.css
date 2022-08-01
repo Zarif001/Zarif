@@ -99,7 +99,7 @@
         margin-bottom: 30px;
     }
 
-    .main__game-start:not([disabled]):hover {
+    .main__game-start:not([main__game-start]):hover {
         color: var(--white);
     }
 }
