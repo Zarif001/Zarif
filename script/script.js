@@ -109,7 +109,7 @@ function createRandomCircle() {
 
     let { width, height } = board.getBoundingClientRect()
 
-    let size = randomNumber(10, 50)
+    let size = randomNumber(25, 50)
 
 
     let x = randomNumber(0, width - size)

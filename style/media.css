@@ -98,6 +98,10 @@
     .main__skill-text {
         margin-bottom: 30px;
     }
+
+    .main__game-start:not([disabled]):hover {
+        color: var(--white);
+    }
 }
 
 @media(max-width:750px) {
@@ -391,7 +395,8 @@
     .main__game-btn {
         font-size: 13px;
     }
-    .main__game-board{
+
+    .main__game-board {
         width: 400px;
         height: 400px;
     }
@@ -587,7 +592,8 @@
     .main__game-screen h3 {
         font-size: 19px;
     }
-    .main__game-board{
+
+    .main__game-board {
         width: 350px;
         height: 350px;
     }
