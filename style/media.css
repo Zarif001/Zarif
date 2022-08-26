@@ -1,0 +1,671 @@
+@media(max-width:1240px) {
+
+    /* Main Content */
+
+    .main__content-items {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .main__content-item {
+        margin: 10px;
+    }
+}
+
+@media(max-width:1110px) {
+
+    /* View  */
+    .view__content-title {
+        font-size: 45px;
+    }
+
+    .view__content-text {
+        font-size: 33px;
+    }
+
+    /* Main Time */
+
+    .main__time-content {
+        height: 100%;
+    }
+
+    .main__time-title {
+        grid-column: span 3;
+    }
+
+    .main__time-clock {
+        order: 1;
+    }
+
+    .main__time-caption {
+        grid-column: span 2;
+    }
+
+    /* Main Items */
+
+    .main__items {
+        grid-template-columns: 1fr;
+    }
+
+    .main__items-left {
+        display: none;
+    }
+
+    .main__items-describtion {
+        max-width: 100%;
+    }
+
+    /* Main Works */
+
+    .main__works-content {
+        grid-column: span 2;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .main__works-sort {
+        width: 100%;
+    }
+
+    .main__works-items {
+        grid-column: span 2;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:900px) {
+
+    /* Header Box */
+
+    .header__box-title {
+        font-size: 30px;
+        line-height: 50px;
+    }
+
+    .header__box-img {
+        width: 350px;
+    }
+
+
+    /* Main Skill */
+
+    .main__skill-title {
+        font-size: 26px;
+        line-height: 40px;
+        margin-bottom: 23px;
+    }
+
+    .main__skill-text {
+        margin-bottom: 30px;
+    }
+
+    .main__game-start:not([main__game-start]):hover {
+        color: var(--white);
+    }
+}
+
+@media(max-width:750px) {
+
+    /* Header Nav */
+
+    .header__content-nav {
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    .header__nav-list {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 60px;
+        height: 0;
+        transition: 1s;
+        overflow: hidden;
+    }
+
+    .header__nav-burgerMenu {
+        order: 1;
+    }
+
+    .header__nav-logo {
+        width: 28%;
+    }
+
+    /* Header Box */
+
+    .header__content-box {
+        flex-direction: column-reverse;
+    }
+
+    .header__box-left {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .header__box-img {
+        margin-top: -85px;
+    }
+
+
+    /* Hire Me */
+
+    .hire__me-btn {
+        margin-top: 13px;
+        z-index: 99;
+    }
+
+    /* Check Menu  */
+
+    .burger-line {
+        display: block !important;
+    }
+
+    .label {
+        display: block !important;
+    }
+
+    #check-menu:checked~#nav {
+        height: 130px;
+    }
+
+
+    /* Main Works */
+
+    .main__works-sortPop {
+        font-size: 15px;
+        padding: 19px 0 19px 13px;
+    }
+
+    .main__works-btn {
+        margin-bottom: 20px;
+    }
+
+    /* Main Skill */
+
+    .main__skill-img {
+        width: 60px;
+    }
+
+    .main__skill-left {
+        margin-right: 23px;
+    }
+
+    /* Main Time  */
+
+    .main__time-content {
+        grid-template-columns: 1fr;
+        padding: 22px;
+    }
+
+    .main__time-caption {
+        grid-column: span 1;
+    }
+
+    .main__time-title {
+        grid-column: span 1;
+    }
+
+    /* Footer Content */
+
+    .footer__content {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .footer__content-item {
+        margin-right: 30px;
+    }
+
+    .footer__content-logo {
+        grid-column: span 4;
+        margin-bottom: 20px;
+        justify-self: center;
+    }
+
+    .footer__content-items {
+        grid-column: span 4;
+    }
+
+    /* View  */
+    .view__content-title {
+        font-size: 38px;
+    }
+
+    .view__content-text {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:650px) {
+
+    /* Main Content  */
+
+    .main__content-item {
+        padding: 28px 30px;
+        width: 350px;
+    }
+
+    .main__content-box img {
+        width: 55px;
+    }
+
+    .main__content-text {
+        font-size: 17px;
+    }
+
+    /* Main Works  */
+
+    .main__works-name {
+        font-size: 25px;
+        line-height: 25px;
+    }
+
+    .main__works-text {
+        font-size: 13px;
+        line-height: 23px;
+    }
+
+    .main__works-picture {
+        grid-column: span 2;
+    }
+
+    .main__works-caption {
+        grid-column: span 2;
+    }
+
+    .main__works-content {
+        flex-wrap: wrap;
+    }
+
+    /* View  */
+    .view__content {
+        margin: 0 50px 50px 50px;
+    }
+
+    .view__content-title {
+        font-size: 34px;
+    }
+
+    .view__content-text {
+        font-size: 25px;
+    }
+}
+
+@media(max-width:550px) {
+
+    /* Header nav */
+
+    .header__nav-logo img {
+        width: 80px;
+    }
+
+    .header__content-nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .header__nav-burgerMenu {
+        grid-column: span 3;
+        margin-top: 15px;
+    }
+
+    .header__nav-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    /* Hire me Btn */
+
+    .hire__me-btn {
+        padding: 8px 17px;
+        font-size: 16px;
+        line-height: 20px;
+        white-space: nowrap;
+    }
+
+    /* Header Box */
+
+    .header__box-title {
+        font-size: 26px;
+        line-height: 35px;
+    }
+
+    /* Main Items */
+
+    .main__items-title {
+        font-size: 30px;
+        line-height: 20px;
+    }
+
+    .main__items-tab {
+        font-size: 16px;
+        line-height: 27px;
+        max-width: 120px;
+        width: 100%;
+    }
+
+    .main__items-describtion {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    /* Main Skills */
+
+    .main__skills {
+        margin-top: 100px;
+    }
+
+    .main__skill-right {
+        grid-column: span 2;
+        margin-top: 30px;
+    }
+
+    .main__skill-left {
+        grid-column: span 2;
+    }
+
+    .main__skill-img {
+        width: 55px;
+    }
+
+    /* Main Game  */
+
+    .main__game-title {
+        max-width: 430px;
+        width: 100%;
+        font-size: 24px;
+        line-height: 25px;
+    }
+
+    .main__game-start {
+        font-size: 22px;
+        line-height: 15px;
+    }
+
+    .main__game-screen h2 {
+        margin-bottom: 35px;
+        font-size: 27px;
+    }
+
+    .main__game-screen p {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .main__game-btn {
+        font-size: 13px;
+    }
+
+    .main__game-board {
+        width: 400px;
+        height: 400px;
+    }
+
+
+    /* Main Time  */
+
+    .main__time {
+        margin-top: 140px;
+    }
+
+    .main__time-title {
+        font-size: 24px;
+        line-height: 34px;
+    }
+
+    .hire__me-btn.third {
+        font-size: 17px;
+        line-height: 14px;
+    }
+
+    .main__time-hours,
+    .main__time-minutes,
+    .main__time-sec {
+        font-size: 20px;
+        padding: 6px 12px;
+    }
+
+    /* Footer Content */
+
+    .footer__content-items {
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    /* Burger */
+
+
+    .burger-line {
+        top: 110px;
+        left: 15px;
+    }
+
+    #brsecond,
+    #brthird {
+        top: 120px;
+    }
+
+    #brfourth {
+        top: 130px;
+    }
+
+    #check-menu:checked~#nav {
+        height: 80px;
+    }
+
+    .label {
+        width: 10%;
+    }
+
+    /* Hire Me */
+
+    .hire__me-btn {
+        grid-column-end: 4;
+    }
+
+
+}
+
+@media(max-width:450px) {
+
+    /* Header Box */
+
+    .header__box-text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .header__box-img {
+        margin-top: -45px;
+        width: 260px;
+    }
+
+    /* Main Content */
+
+    .main__content-img {
+        width: 50px;
+    }
+
+    .main__content-item {
+        padding: 13px 5px;
+        width: 290px;
+    }
+
+    .main__content-text {
+        font-size: 15px;
+        line-height: 20px;
+    }
+
+    .main__content-number {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    /* Main Items  */
+
+    .main__items-describtion {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    /* Main Skill */
+
+    .main__skill-title {
+        font-size: 21px;
+        line-height: 34px;
+    }
+
+    .main__skill-tab {
+        font-size: 15px;
+        line-height: 25px;
+        padding: 4px 12px;
+    }
+
+    .main__skill-text {
+        margin-bottom: 17px;
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+    .main__skill-img {
+        width: 45px;
+    }
+
+    /* Main Works */
+
+    .main__works-tab {
+        line-height: 22px;
+        font-size: 16px;
+        padding: 4px 14px;
+    }
+
+    .main__works-title {
+        font-size: 31px;
+        line-height: 37px;
+    }
+
+    .main__works-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .main__works-name {
+        font-size: 24px;
+        line-height: 12px;
+    }
+
+    .main__works-btn {
+        font-size: 15px;
+        line-height: 22px;
+        max-width: 120px;
+        padding: 6px 17px;
+    }
+
+    /* Main Game */
+
+    .main__game-caption {
+        padding: 30px
+    }
+
+    .main__game-title {
+        font-size: 17px;
+        line-height: 24px;
+    }
+
+    .main__game-start {
+        margin-top: 25px;
+        font-size: 20px;
+        line-height: 15px;
+    }
+
+    .main__game-screen p {
+        font-size: 16px;
+        line-height: 26px;
+        text-align: center;
+    }
+
+    .main__game-screen h2 {
+        margin-bottom: 20px;
+        font-size: 23px;
+    }
+
+    .main__game-screen h3 {
+        font-size: 19px;
+    }
+
+    .main__game-board {
+        width: 350px;
+        height: 350px;
+    }
+
+    /* Main Time */
+
+    .main__time-text {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .hire__me-btn.third {
+        font-size: 14px;
+        line-height: 4px;
+    }
+
+    .main__time-hours,
+    .main__time-minutes,
+    .main__time-sec {
+        font-size: 16px;
+        padding: 2px 8px;
+    }
+
+    /* Footer Content */
+
+    .footer__content-title {
+        font-size: 19px;
+        line-height: 24px;
+    }
+
+    .footer__content-link {
+        line-height: 28px;
+        font-size: 16px;
+    }
+
+    .footer__content-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .footer__content-input {
+        font-size: 16px;
+    }
+
+    .footer__content-button {
+        font-size: 17px;
+        line-height: 22px;
+        max-width: 185px;
+    }
+
+
+    /* Message */
+
+    .message__content {
+        padding: 18px;
+    }
+
+    .message__content-title {
+        font-size: 28px;
+        line-height: 26px;
+    }
+
+    /* View  */
+    .view__content {
+        margin: 0;
+    }
+
+    .view__content-title {
+        font-size: 35px;
+    }
+
+    .view__content-text {
+        font-size: 25px;
+    }
+}
