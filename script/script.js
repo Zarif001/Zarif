@@ -147,7 +147,7 @@ function closeWindow() {
     timeClose.addEventListener('click', () => {
         timeContent.style.height = `0`
         startBtn.style.display = 'none'
-        gameTitle.innerHTML = ` Чтобы еще раз сыграть переходи <a
+        gameTitle.innerHTML = ` <b>Чтобы еще раз сыграть переходи</b> <a
             href="https://zarif001.github.io/Circle-Game-/">сюда</a><br>
 
             <span>Ваш рекорд: ${score} !</span>

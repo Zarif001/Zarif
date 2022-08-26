@@ -99,9 +99,6 @@
         margin-bottom: 30px;
     }
 
-    .main__game-start:not([main__game-start]):hover {
-        color: var(--white);
-    }
 }
 
 @media(max-width:750px) {
@@ -568,7 +565,7 @@
     }
 
     .main__game-title {
-        font-size: 15px;
+        font-size: 16px;
         line-height: 24px;
     }
 
