@@ -46,7 +46,8 @@ const startBtn = document.querySelector('.main__game-start'),
     board = document.querySelector('.main__game-board'),
     timeClose = document.querySelector('.main__game-close'),
     timeDes = document.querySelector('.main__game-describtion'),
-    gameScroll = document.querySelector('#gameScroll')
+    gameScroll = document.querySelector('#gameScroll'),
+    gameTitle = document.querySelector('.main__game-title')
 
 let time = 0,
     score = 0;
@@ -57,6 +58,7 @@ startBtn.addEventListener('click', (e) => {
     timeContent.style.transition = `1s`
     gameScroll.scrollIntoView()
 })
+
 
 
 
@@ -144,6 +146,16 @@ function randomNumber(min, max) {
 function closeWindow() {
     timeClose.addEventListener('click', () => {
         timeContent.style.height = `0`
+        startBtn.style.display = 'none'
+        gameTitle.innerHTML = ` Чтобы еще раз сыграть переходи <a
+            href="https://zarif001.github.io/Circle-Game-/">сюда</a><br>
+
+            <span>Ваш рекорд: ${score} !</span>
+        `
+        gameTitle.style.cssText = `
+        white-space: nowrap;
+        
+        `
     })
 }
 
@@ -257,10 +269,10 @@ function messageHire() {
 messageHire()
 
 
-const changeAction = () =>{
+const changeAction = () => {
 
     const sortMain = document.querySelectorAll('.main__works-link')
-  
+
     let index = 0
 
     let intervall = setInterval((block) => {
@@ -269,12 +281,12 @@ const changeAction = () =>{
         block[index].classList.add('active')
     }, 8000, document.querySelectorAll('.tab-pane'));
 
-    sortMain.forEach(sort =>{
-        sort.addEventListener('click', () =>{
-            if(true){
-                clearInterval(intervall) 
-                
-            } 
+    sortMain.forEach(sort => {
+        sort.addEventListener('click', () => {
+            if (true) {
+                clearInterval(intervall)
+
+            }
         })
     })
 

@@ -450,7 +450,7 @@
     }
 
     #check-menu:checked~#nav {
-        height: 80px;
+        height: 60px;
     }
 
     .label {
@@ -568,7 +568,7 @@
     }
 
     .main__game-title {
-        font-size: 17px;
+        font-size: 15px;
         line-height: 24px;
     }
 

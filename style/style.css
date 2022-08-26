@@ -581,7 +581,7 @@ body.active {
     position: absolute;
     top: 0px;
     right: 0px;
-    background: orangered   ;
+    background: orangered;
     padding: 5px 10px;
 }
 
@@ -737,6 +737,16 @@ body.active {
     text-align: center;
     max-width: 500px;
     width: 100%;
+}
+
+.main__game-title a {
+    color: var(--white);
+}
+
+.main__game-title span {
+    color: orangered;
+    line-height: 50px;
+    border-bottom: 2px solid orangered;
 }
 
 .main__game-caption {
